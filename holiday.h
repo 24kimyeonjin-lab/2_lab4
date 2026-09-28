@@ -19,12 +19,12 @@ namespace KimYeonjin2693058
         {
             date.print(); //dayOfYear::print()
             if (parkingEnforcement) 
-                std::cout << "Parking laws wil e enforced.\n";
+                std::cout << "Parking laws will be enforced.\n";
             else
                 std::cout << "Parking laws will NOT be enforced.\n";
         }
-        const dayOfYear& getDate() const {return date;}
-        void setDate(const dayOFYear& d) {date = d;}
+        const dayOfYear& getDate() const { return date; }
+        void setDate(const dayOfYear& d) { date = d; }
     };
 }
 

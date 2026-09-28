@@ -8,8 +8,8 @@ namespace KimYeonjin2693058
     class dayOfYear
     {
     
-        int month{};
-        int day {};
+        int month;
+        int day;
         void testMonth()
         {
             if ((month < 1) || (month > 12)) {
@@ -21,7 +21,7 @@ namespace KimYeonjin2693058
         void testDay()
         {
             if ((day < 1) || (day > 31)){
-                std::cout << "Illegal day value!\n";
+                std::cout << "Invalid day\n";
                 std::exit(1);
             }
         }
@@ -35,16 +35,16 @@ namespace KimYeonjin2693058
 
         void input()
         {
-            std::cout << "Enter the month as a number: ";
+            std::cout << "Enter month: ";
             std::cin >> month; testMonth();
-            std::cout << "Enter the day of the month: ";
+            std::cout << "Enter day: ";
             std::cin >> day; testDay();
         }
     
         void setMonth(int m) { month = m; testMonth();}
-        void setDay(int d) { day = dy; testDay();}
+        void setDay(int d) { day = d; testDay();}
 
-        void print() 
+        void print() const
         {
             switch(month)
             {
@@ -65,7 +65,7 @@ namespace KimYeonjin2693058
         int getMonth() const { return month; }
         int getDay() const { return day; }   
     
-};
+    };
 
 }
 
