@@ -35,9 +35,9 @@ namespace KimYeonjin2693058
 
         void input()
         {
-            std::cout << "Enter month: ";
+            std::cout << "Enter the month: ";
             std::cin >> month; testMonth();
-            std::cout << "Enter day: ";
+            std::cout << "Enter the day: ";
             std::cin >> day; testDay();
         }
     
