@@ -20,6 +20,5 @@ if(compareDayOfYear(h1.getDate(), h2.getDate()))
 else 
     std::cout << "not same\n";
 
-
    return 0;
 }
